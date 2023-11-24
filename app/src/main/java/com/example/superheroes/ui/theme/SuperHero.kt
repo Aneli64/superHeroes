@@ -52,7 +52,8 @@ fun SuperHeroView() {
         columns = GridCells.Adaptive(130.dp),
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(horizontal = 4.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         items(getSuperheroes()) { superhero ->
             ItemHero(superhero = superhero, onItemSelected = { Toast.makeText(context, it.superheroName, Toast.LENGTH_SHORT).show()})
